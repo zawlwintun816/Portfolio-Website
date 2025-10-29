@@ -1,0 +1,106 @@
+:root {
+  --primary-blue: #2563eb;
+  --primary-purple: #9333ea;
+  --secondary-purple: #4f46e5;
+  --dark-grey: #1f2937;
+  --accent-purple: #8639eb;
+}
+
+html,
+body,
+nav {
+  background: radial-gradient(circle at top left, #1c1f2b, #0d1117);
+  font-family: Inter, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+}
+
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue),
+    var(--primary-purple),
+    var(--secondary-purple)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-purple,
+.active {
+  color: var(--accent-purple) !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.bg-dark-grey {
+  background-color: var(--dark-grey) !important;
+}
+
+.nav-hover,
+.zoom-hover,
+.zoom-hover-sm,
+.zoom-hover-md,
+.btn-hover {
+  transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transform-origin: center center;
+}
+
+.zoom-hover:hover,
+.nav-hover:hover {
+  color: var(--primary-blue) !important;
+  transform: scale(1.2);
+}
+
+.zoom-hover-sm:hover {
+  transform: scale(1.05) !important;
+}
+
+.zoom-hover-md:hover {
+  transform: scale(1.13) !important;
+}
+
+.btn-hover:hover {
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+.icon-box {
+  width: 50px;
+  height: 50px;
+  display: flex;
+  flex-shrink: 0;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  color: #fff !important;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--primary-purple)
+  );
+}
+
+.cert-card {
+  width: 100%;
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-img {
+  width: 55%;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
