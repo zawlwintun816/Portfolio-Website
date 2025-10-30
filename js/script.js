@@ -26,27 +26,36 @@ $(window).on("scroll", () => {
   $navLinks.filter(`[href="#${current}"]`).addClass("active");
 });
 
-function scrollToPortfolio() {
+function scrollToSection(selector, height) {
   $("html, body").animate(
     {
-      scrollTop: $("#portfolio").offset().top - 100,
+      scrollTop: $(selector).offset().top - height,
     },
     0
   );
 }
 
-// Control portfolio section height when clicking portfolio nav link
-$('a[href="#portfolio"]').on("click", function (e) {
+// Control portfolio section and mobile view height when clicking portfolio nav link
+$('a[href^="#"]').on("click", function (e) {
   e.preventDefault();
-  scrollToPortfolio();
+  const target = $(this).attr("href");
+  if ($(window).width() < 992 || target == "#portfolio") {
+    // If navbar is collapsed, close it after clicking
+    if ($(".navbar-collapse").hasClass("show")) {
+      $(".navbar-collapse").collapse("hide");
+    }
+    scrollToSection(target, 100);
+  } else {
+    scrollToSection(target, 0);
+  }
 });
 
 // Redirect to certificate tab from About section
 $("#certificates")
-  .closest(".col-3")
+  .closest(".col-md-3")
   .on("click", () => {
     new bootstrap.Tab($("#certificates-tab")[0]).show();
-    scrollToPortfolio();
+    scrollToSection("#portfolio", 100);
   });
 
 // Utility: Fetch JSON
@@ -90,7 +99,7 @@ $(async () => {
     const $container = $(containerSelector).empty();
     data.forEach((item, i) => {
       const $col = $("<div>")
-        .addClass("col-6 col-sm-4 col-md-4 col-lg-4")
+        .addClass("col-sm-12 col-md-6 col-lg-4")
         .attr({
           "data-aos": "zoom-in",
           "data-aos-delay": 100 + i * 100,
