@@ -17,6 +17,11 @@ html {
   scroll-behavior: smooth;
 }
 
+html, body {
+  overflow-x: hidden !important;
+  width: 100%;
+}
+
 .text-gradient {
   background: linear-gradient(
     90deg,
