@@ -1,0 +1,121 @@
+:root {
+  --primary-blue: #2563eb;
+  --primary-purple: #9333ea;
+  --secondary-purple: #4f46e5;
+  --accent-purple: #8639eb;
+  --dark-grey: #1f2937;
+  --grey: #aaaaaa;
+}
+
+/* ===== Base ===== */
+html,
+body {
+  background: radial-gradient(circle at top left, #1c1f2b, #0d1117);
+  font-family: "Inter", sans-serif;
+  overflow-x: hidden;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+nav {
+  background: inherit;
+}
+
+/* ===== Utilities ===== */
+.text-gradient {
+  background: linear-gradient(
+    90deg,
+    var(--primary-blue),
+    var(--primary-purple),
+    var(--secondary-purple)
+  );
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+}
+
+.text-purple,
+.active {
+  color: var(--accent-purple) !important;
+}
+
+.text-grey {
+  color: var(--grey) !important;
+}
+
+.text-justify {
+  text-align: justify !important;
+}
+
+.bg-dark-grey {
+  background-color: var(--dark-grey) !important;
+}
+
+.pointer {
+  cursor: pointer !important;
+}
+
+.mt-6 {
+  margin-top: 4rem !important;
+}
+
+/* ===== Hover Effects ===== */
+.nav-hover,
+.zoom-hover,
+.zoom-hover-sm,
+.zoom-hover-md,
+.btn-hover {
+  transition: transform 0.2s ease, color 0.2s ease, box-shadow 0.2s ease;
+  transform-origin: center center;
+}
+
+.nav-hover:hover,
+.zoom-hover:hover {
+  color: var(--primary-blue) !important;
+  transform: scale(1.2);
+}
+
+.zoom-hover-sm:hover {
+  transform: scale(1.05);
+}
+
+.zoom-hover-md:hover {
+  transform: scale(1.13);
+}
+
+.btn-hover:hover {
+  color: #fff !important;
+  transform: scale(1.1);
+}
+
+/* ===== Components ===== */
+.icon-box {
+  width: 50px;
+  height: 50px;
+  flex-shrink: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 8px;
+  font-size: 1.3rem;
+  color: #fff;
+  background: linear-gradient(
+    135deg,
+    var(--primary-blue),
+    var(--primary-purple)
+  );
+}
+
+/* Certificates and Skills */
+.cert-card {
+  text-align: center;
+  border-radius: 10px;
+  overflow: hidden;
+  box-shadow: 0 3px 10px rgba(0, 0, 0, 0.1);
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.skill-img {
+  width: 55%;
+}

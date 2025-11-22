@@ -1,0 +1,328 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Zaw Lwin Tun</title>
+
+    <!-- Styles -->
+    <link href="css/bootstrap.min.css" rel="stylesheet" />
+    <link href="css/fontawesome.all.min.css" rel="stylesheet" />
+    <link href="css/aos.css" rel="stylesheet" />
+    <link href="css/style.css" rel="stylesheet" />
+    <link rel="icon" type="image/png" href="assets/title_profile.png" />
+</head>
+
+<body>
+    <!-- ===== Navbar ===== -->
+    <nav class="navbar navbar-expand-lg bg-light fixed-top shadow-sm">
+        <div class="container">
+            <a class="navbar-brand fw-bold text-gradient" href="#home">ZAW LWIN TUN</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-top-link text-white nav-hover active" href="#home">Home</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-top-link text-white nav-hover" href="#about">About</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-top-link text-white nav-hover" href="#portfolio">Portfolio</a>
+                    </li>
+                    <li class="nav-item mx-2">
+                        <a class="nav-link nav-top-link text-white nav-hover" href="#contact">Contact</a>
+                    </li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <!-- ===== Home Section ===== -->
+    <section id="home" class="d-flex align-items-center min-vh-100 text-white">
+        <div class="container mt-5">
+            <div class="row align-items-center">
+                <div class="col-lg-7 my-5" data-aos="fade-right">
+                    <h1 class="display-5 fw-bold mb-3">
+                        Hello, I'm <br /><span class="text-gradient">Zaw Lwin Tun</span>
+                    </h1>
+                    <h4 class="mb-3 text-primary">
+                        Java Developer | Software Engineer | Full-Stack Developer
+                    </h4>
+                    <p class="fs-5 mb-4 text-justify">
+                        Backend developer with over <span class="exp-year"></span> years
+                        of experience specializing in Java and Spring Boot. Skilled in
+                        building robust RESTful APIs, applying OOP principles, and working
+                        with MySQL in Agile environments. Committed to writing clean,
+                        maintainable code and delivering scalable, high-performance web
+                        applications.
+                    </p>
+                    <div class="d-flex flex-wrap gap-2" data-aos="fade-up" data-aos-delay="200">
+                        <a href="#about" class="btn btn-outline-primary btn-lg btn-hover">
+                            <i class="fa-regular fa-user me-2"></i>About
+                        </a>
+                        <a href="#portfolio" class="btn btn-outline-primary btn-lg btn-hover">
+                            <i class="fa-solid fa-up-right-from-square me-2"></i>Portfolio
+                        </a>
+                        <a href="#contact" class="btn btn-outline-primary btn-lg btn-hover">
+                            <i class="fa-regular fa-envelope me-2"></i>Contact
+                        </a>
+                        <a href="javascript:void(0)" id="download-cv" class="btn btn-outline-primary btn-lg btn-hover">
+                            <i class="fa-solid fa-download me-2"></i>Download CV
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-5 mb-5 text-center" data-aos="fade-left">
+                    <img src="assets/profile.png" alt="profile" class="img-fluid rounded-circle w-75 w-md-50" />
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== About Section ===== -->
+    <section id="about" class="d-flex align-items-center min-vh-100 text-white mt-3">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4 fw-bold text-center my-2">
+                About <span class="text-gradient">Me</span>
+            </h1>
+            <h5 class="text-center mb-5 text-secondary">
+                Passionate developer with a love for creating innovative solutions
+            </h5>
+
+            <div class="row g-4">
+                <!-- Left Column -->
+                <div class="col-lg-6 mb-5" data-aos="fade-right">
+                    <h3>Hello! I'm a passionate developer who loves to create.</h3>
+                    <p class="text-secondary text-justify fs-6">
+                        With over <span class="exp-year"></span> years of experience, I’ve
+                        built a strong foundation as a Java developer and am expanding
+                        into full-stack development. I started with a passion for
+                        problem-solving, which has grown into mastering software
+                        engineering across frontend, backend, and system design.
+                    </p>
+                    <p class="text-secondary text-justify fs-6">
+                        I’ve worked on impactful projects at MetaTeam Myanmar and Advent
+                        Soft, focusing on scalable and efficient solutions. While Java and
+                        backend development are my strengths, I’m actively growing my
+                        frontend skills to become a full-stack engineer—able to design
+                        intuitive interfaces, build reliable backends, and deliver
+                        complete solutions.
+                    </p>
+
+                    <div class="row text-center my-3 gy-3" data-aos="fade-up" data-aos-delay="100">
+                        <div class="col-6 col-md-3 pointer zoom-hover-md">
+                            <span class="text-purple fs-3 fw-bold"><span class="exp-year"></span>+</span><br />
+                            Years Experience
+                        </div>
+
+                        <div class="col-6 col-md-3 pointer zoom-hover-md" data-bs-toggle="tooltip"
+                            data-bs-title="These projects are confidential so can't be shared">
+                            <span class="text-purple fs-3 fw-bold" id="contributedProjects"></span><br />
+                            Projects Contributed
+                        </div>
+
+                        <div class="col-6 col-md-3 pointer zoom-hover-md" data-bs-toggle="tooltip"
+                            data-bs-title="Click to browse projects">
+                            <a class="nav-link" href="https://github.com/zawlwintun816?tab=repositories"
+                                target="_blank">
+                                <span class="text-purple fs-3 fw-bold" id="personalProjects"></span><br />
+                                Personal/Course Projects
+                            </a>
+                        </div>
+
+                        <div class="col-6 col-md-3 pointer zoom-hover-md" data-bs-toggle="tooltip"
+                            data-bs-title="Click to browse certificates">
+                            <span class="text-purple fs-3 fw-bold" id="certificates"></span><br />
+                            Certificates
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Right Column -->
+                <div class="col-lg-6 d-flex flex-column gap-3 mb-5">
+                    <div class="zoom-hover-sm">
+                        <div class="card p-4 shadow-sm border-0 rounded-4 bg-dark-grey" role="button" data-aos="zoom-in"
+                            data-aos-delay="100">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box flex-shrink-0">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="text-white">Clean Code</h4>
+                                    <p class="text-grey">
+                                        Writing maintainable, scalable, and efficient code
+                                        following best practices.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="zoom-hover-sm">
+                        <div class="card p-4 shadow-sm border-0 rounded-4 bg-dark-grey" role="button" data-aos="zoom-in"
+                            data-aos-delay="200">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box flex-shrink-0">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="text-white">Problem Solving</h4>
+                                    <p class="text-grey">
+                                        Analytical thinking to break down complex problems into
+                                        manageable solutions.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="zoom-hover-sm">
+                        <div class="card p-4 shadow-sm border-0 rounded-4 bg-dark-grey" role="button" data-aos="zoom-in"
+                            data-aos-delay="300">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box flex-shrink-0">
+                                    <i class="fa-solid fa-code"></i>
+                                </div>
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="text-white">Collaboration</h4>
+                                    <p class="text-grey">
+                                        Strong communication skills and experience working in
+                                        agile teams.
+                                    </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Portfolio Section ===== -->
+    <section id="portfolio" class="d-flex align-items-center min-vh-100 text-white mb-5">
+        <div class="container" data-aos="fade-up">
+            <h1 class="display-4 fw-bold text-center mb-2 mt-6">
+                My <span class="text-gradient">Portfolio</span>
+            </h1>
+
+            <div class="row g-4" data-aos="zoom-in">
+                <nav class="nav nav-pills nav-justified rounded-4">
+                    <button class="nav-link ms-2 me-4 my-2 p-3 rounded-4 active" id="techstack-tab" data-bs-toggle="tab"
+                        data-bs-target="#techstack-tab-pane" type="button">
+                        <img src="assets/cubes.svg" /><br /><span class="text-white">Tech Skills</span>
+                    </button>
+                    <button class="nav-link ms-4 me-2 my-2 p-3 rounded-4" id="certificates-tab" data-bs-toggle="tab"
+                        data-bs-target="#certificates-tab-pane" type="button">
+                        <img src="assets/award.svg" /><br /><span class="text-white">Certificates</span>
+                    </button>
+                </nav>
+            </div>
+
+            <div class="tab-content mt-4">
+                <div class="tab-pane fade show active" id="techstack-tab-pane">
+                    <div id="skillTab" class="row g-3 justify-content-center"></div>
+                </div>
+                <div class="tab-pane fade" id="certificates-tab-pane">
+                    <div id="certificateTab" class="row g-3 justify-content-center"></div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- ===== Contact Section ===== -->
+    <section id="contact" class="d-flex flex-column justify-content-between min-vh-100 text-white mt-5">
+        <div class="container my-auto" data-aos="fade-up">
+            <h1 class="display-4 fw-bold text-center mb-2">
+                Get In <span class="text-gradient">Touch</span>
+            </h1>
+            <h5 class="text-center mb-5 text-secondary">
+                Have a project in mind or want to collaborate? I'd love to hear from
+                you!
+            </h5>
+
+            <div class="row g-4">
+                <div class="col-lg-6" data-aos="fade-right">
+                    <h3>Let's start a conversation</h3>
+                    <p class="text-secondary text-justify fs-6 mb-4">
+                        I’m always happy to hear about new projects and opportunities.
+                        Whether you are a company looking to hire, or another developer
+                        who wants to work together, I would love to connect.
+                    </p>
+                    <h5>Follow me on social media</h5>
+                    <div class="mt-3 d-flex gap-3">
+                        <a href="https://github.com/zawlwintun816/" target="_blank">
+                            <i class="fa-brands fa-github text-secondary zoom-hover fs-1"></i>
+                        </a>
+                        <a href="https://www.linkedin.com/in/zaw-lwin-tun-8163o742/" target="_blank">
+                            <i class="fa-brands fa-linkedin text-secondary zoom-hover fs-1"></i>
+                        </a>
+                    </div>
+                </div>
+
+                <div class="col-lg-6 d-flex flex-column gap-3 mb-5">
+                    <a id="emailLink" href="javascript:void(0)" class="zoom-hover-sm text-decoration-none">
+                        <div class="card p-4 shadow-sm border-0 rounded-4 bg-dark-grey" role="button" data-aos="zoom-in"
+                            data-aos-delay="200">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box flex-shrink-0">
+                                    <i class="fa-solid fa-envelope"></i>
+                                </div>
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="text-white">Email</h4>
+                                    <p id="email" class="text-grey"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <a id="phoneLink" href="javascript:void(0)" class="zoom-hover-sm text-decoration-none">
+                        <div class="card p-4 shadow-sm border-0 rounded-4 bg-dark-grey" role="button" data-aos="zoom-in"
+                            data-aos-delay="400">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box flex-shrink-0">
+                                    <i class="fa-solid fa-phone"></i>
+                                </div>
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="text-white">Phone</h4>
+                                    <p id="phoneNum" class="text-grey"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </a>
+
+                    <div id="emailLink" href="javascript:void(0)" class="zoom-hover-sm">
+                        <div class="card p-4 shadow-sm border-0 rounded-4 bg-dark-grey" role="button" data-aos="zoom-in"
+                            data-aos-delay="400">
+                            <div class="d-flex align-items-center">
+                                <div class="icon-box flex-shrink-0">
+                                    <i class="fa-solid fa-location-dot"></i>
+                                </div>
+                                <div class="d-flex flex-column ms-3">
+                                    <h4 class="text-white">Location</h4>
+                                    <p id="location" class="text-grey"></p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <footer class="py-2 bg-dark text-center text-white">
+            <small>© 2025 Zaw Lwin Tun. All rights reserved.</small>
+        </footer>
+    </section>
+
+    <!-- Scripts -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <script src="js/aos.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
